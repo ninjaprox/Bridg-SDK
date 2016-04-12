@@ -1,0 +1,10 @@
+framework module BridgSDK {
+  umbrella header "BridgSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module BridgSDK.Swift {
+    header "BridgSDK-Swift.h"
+}
