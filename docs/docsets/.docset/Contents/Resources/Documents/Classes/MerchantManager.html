@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MerchantManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MerchantManager" class="dashAnchor"></a>
+    <a title="MerchantManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (82% documented)</p>
+        <p class="header-right"><a href="https://github.com/ninjaprox/Bridg-SDK-doc"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MerchantManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomerManager.html">CustomerManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MerchantManager.html">MerchantManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentStatus.html">PaymentStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionStatus.html">TransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CustomerManagerDelegate.html">CustomerManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MerchantManagerDelegate.html">MerchantManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MerchantManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MerchantManager</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">BridgSDKPeripheralDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>MerchantManager</code> object is used to provide functionalities of merchant.</p>
+
+<p><code>MerchantManager</code> is singleton class. Therefore, use <code>sharedInstance</code> property to obtain instance of this class.
+Before calling any methods, assure to call <code>setIdentity(_:)</code> firstly to set customer&rsquo;s identity, e.g., customer&rsquo;s ID. Otherwise, an exception will be thrown.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC8BridgSDK15MerchantManager8delegateXwGSqPS_23MerchantManagerDelegate__"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC8BridgSDK15MerchantManager8delegateXwGSqPS_23MerchantManagerDelegate__">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate of <code><a href="../Classes/MerchantManager.html">MerchantManager</a></code>, it must conform <code><a href="../Protocols/MerchantManagerDelegate.html">MerchantManagerDelegate</a></code>.</p>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Protocols/MerchantManagerDelegate.html">MerchantManagerDelegate</a></code>.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">weak</span> <span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">MerchantManagerDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC8BridgSDK15MerchantManager14sharedInstanceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/sharedInstance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC8BridgSDK15MerchantManager14sharedInstanceS0_">sharedInstance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared instance of <code><a href="../Classes/MerchantManager.html">MerchantManager</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">sharedInstance</span> <span class="o">=</span> <span class="kt">MerchantManager</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20interface"></a>
+                <a name="//apple_ref/swift/Section/Public interface" class="dashAnchor"></a>
+                <a href="#/Public%20interface">
+                  <h3 class="section-name">Public interface</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager11setIdentityFSST_"></a>
+                    <a name="//apple_ref/swift/Method/setIdentity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager11setIdentityFSST_">setIdentity(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set merchant&rsquo;s identity, e.g., merchant&rsquo;s ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setIdentity</span><span class="p">(</span><span class="nv">identity</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant&rsquo;s identity, e.g., merchant&rsquo;s ID.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager16startDiscoveringFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/startDiscovering()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager16startDiscoveringFT_T_">startDiscovering()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start discovering around customers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startDiscovering</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager15stopDiscoveringFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stopDiscovering()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager15stopDiscoveringFT_T_">stopDiscovering()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop discovering around customers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopDiscovering</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager25connectDeviceWithIdentityFSST_"></a>
+                    <a name="//apple_ref/swift/Method/connectDeviceWithIdentity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager25connectDeviceWithIdentityFSST_">connectDeviceWithIdentity(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connect to a customer by its identity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">connectDeviceWithIdentity</span><span class="p">(</span><span class="nv">identity</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The customer&rsquo;s identity.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager13makePaymentOfFTSf16customerIdentitySS_T_"></a>
+                    <a name="//apple_ref/swift/Method/makePaymentOf(_:customerIdentity:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager13makePaymentOfFTSf16customerIdentitySS_T_">makePaymentOf(_:customerIdentity:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Request a payment to a customer by its identity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">makePaymentOf</span><span class="p">(</span><span class="nv">amount</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span> <span class="nv">customerIdentity</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>amount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount of payment.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customerIdentity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The customer&rsquo;s identity.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC8BridgSDK15MerchantManager23updateTransactionStatusFOS_17TransactionStatusT_"></a>
+                    <a name="//apple_ref/swift/Method/updateTransactionStatus(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC8BridgSDK15MerchantManager23updateTransactionStatusFOS_17TransactionStatusT_">updateTransactionStatus(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Update transaction status to customer.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>If the merchant is in charge of making transaction, after marking one, call this method to notify customer status of the transaction.</p>
+
+</div>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Protocols/MerchantManagerDelegate.html#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager22readyToMakeTransactionSb_T_">MerchantManagerDelegate.merchant(_:readyToMakeTransaction:)</a></code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">updateTransactionStatus</span><span class="p">(</span><span class="nv">transactionStatus</span><span class="p">:</span> <span class="kt">TransactionStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The status of transaction.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/ninjaprox" target="_blank" rel="external">Nguyen Vinh</a>. All rights reserved. (Last updated: 2016-04-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

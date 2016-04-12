@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MerchantManagerDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/MerchantManagerDelegate" class="dashAnchor"></a>
+    <a title="MerchantManagerDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (82% documented)</p>
+        <p class="header-right"><a href="https://github.com/ninjaprox/Bridg-SDK-doc"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MerchantManagerDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomerManager.html">CustomerManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MerchantManager.html">MerchantManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PaymentStatus.html">PaymentStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionStatus.html">TransactionStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CustomerManagerDelegate.html">CustomerManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MerchantManagerDelegate.html">MerchantManagerDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MerchantManagerDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MerchantManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>MerchantManagerDelegate</code> protocol defines the methods that a delegate of a <code><a href="../Classes/MerchantManager.html">MerchantManager</a></code> object must adopt.
+All methods of the protocol are required.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager18readyToCommunicateSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/merchant(_:readyToCommunicate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager18readyToCommunicateSb_T_">merchant(_:readyToCommunicate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when a customer&rsquo;s device connected to the merchant&rsquo;s device and they are ready to exchange data.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>All methods of <code><a href="../Classes/MerchantManager.html">MerchantManager</a></code>, except <code>setIdentity(_:)</code>, <code>startDiscovering()</code> and <code>stopDiscovering()</code>, must be called after this method is invoked.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">merchant</span><span class="p">(</span><span class="nv">merchant</span><span class="p">:</span> <span class="kt">MerchantManager</span><span class="p">,</span> <span class="n">readyToCommunicate</span> <span class="nv">ready</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant manager providing this information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ready</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The readiness to exchange data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager16didUpdateDevicesGSaCSo6Device__T_"></a>
+                    <a name="//apple_ref/swift/Method/merchant(_:didUpdateDevices:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager16didUpdateDevicesGSaCSo6Device__T_">merchant(_:didUpdateDevices:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the merchant has update on list of discovered devices.</p>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code>Device</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">merchant</span><span class="p">(</span><span class="nv">merchant</span><span class="p">:</span> <span class="kt">MerchantManager</span><span class="p">,</span> <span class="n">didUpdateDevices</span> <span class="nv">devices</span><span class="p">:</span> <span class="p">[</span><span class="kt">Device</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant manager providing this information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>devices</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The list of discovered devices.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager23didReceivePaymentStatusOS_13PaymentStatus_T_"></a>
+                    <a name="//apple_ref/swift/Method/merchant(_:didReceivePaymentStatus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager23didReceivePaymentStatusOS_13PaymentStatus_T_">merchant(_:didReceivePaymentStatus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the merchant receives the reply to sent payment request.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">merchant</span><span class="p">(</span><span class="nv">merchant</span><span class="p">:</span> <span class="kt">MerchantManager</span><span class="p">,</span> <span class="n">didReceivePaymentStatus</span> <span class="nv">paymentStatus</span><span class="p">:</span> <span class="kt">PaymentStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant manager providing this information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>paymentStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reply to sent payment request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager22readyToMakeTransactionSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/merchant(_:readyToMakeTransaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager22readyToMakeTransactionSb_T_">merchant(_:readyToMakeTransaction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the merchant is in charge of making transaction.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>After making transaction, should call <code>updateTransactionStatus(_:)</code> of <code><a href="../Classes/MerchantManager.html">MerchantManager</a></code> to notify customer status of the transaction.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">merchant</span><span class="p">(</span><span class="nv">merchant</span><span class="p">:</span> <span class="kt">MerchantManager</span><span class="p">,</span> <span class="n">readyToMakeTransaction</span> <span class="nv">ready</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant manager providing this information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ready</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The readiness to make transaction.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager27didReceiveTransactionStatusOS_17TransactionStatus_T_"></a>
+                    <a name="//apple_ref/swift/Method/merchant(_:didReceiveTransactionStatus:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP8BridgSDK23MerchantManagerDelegate8merchantFTCS_15MerchantManager27didReceiveTransactionStatusOS_17TransactionStatus_T_">merchant(_:didReceiveTransactionStatus:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Invoked when the merchant receives transaction status from customer.</p>
+
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This method is invoked only if customer is in charge of making transaction. The merchant uses this method to handle transaction completion.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">merchant</span><span class="p">(</span><span class="nv">merchant</span><span class="p">:</span> <span class="kt">MerchantManager</span><span class="p">,</span> <span class="n">didReceiveTransactionStatus</span> <span class="nv">transactionStatus</span><span class="p">:</span> <span class="kt">TransactionStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>merchant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The merchant manager providing this information.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transactionStatus</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The transaction status.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/ninjaprox" target="_blank" rel="external">Nguyen Vinh</a>. All rights reserved. (Last updated: 2016-04-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.6.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
