@@ -1,6 +1,6 @@
 {
   "name": "BridgSDK",
   "tagline": "BridgSDK documentation",
-  "body": "### Integration\r\n1. Drag and drop `BridgSDK.framework` into project.\r\n2. Assure that `BridgSDK.framework` is included in **Embedded Binaries**.\r\n3. Import the module using `@import BridgSDK;` wherever using the SDK or in prefix header file.\r\n4. Start using the SDK.\r\n\r\n### API documentation\r\nThe documentation of all APIs in the SDK is [here](http://ninjaprox.github.io/Bridg-SDK-doc/docs/index.html).\r\n\r\n### Support or Contact\r\nHaving trouble with integration or the SDK? Create new issue [here](https://github.com/ninjaprox/Bridg-SDK-doc/issues) or contact us directly and we’ll help you sort it out.\r\n",
+  "body": "### Integration\r\n1. Drag and drop `BridgSDK.framework` into project.\r\n2. Assure that `BridgSDK.framework` is included in **Embedded Binaries**.\r\n3. Import the module using `@import BridgSDK;` wherever using the SDK or in prefix header file.\r\n4. Start using the SDK.\r\n\r\n### API documentation\r\nThe documentation of all APIs in the SDK is [here](http://ninjaprox.github.io/Bridg-SDK/docs/index.html).\r\n\r\n### Support or Contact\r\nHaving trouble with integration or the SDK? Create new issue [here](https://github.com/ninjaprox/Bridg-SDK/issues) or contact us directly and we’ll help you sort it out.\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
